@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4571AF7B2149FCE2006AE2B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B78882AE940255187867EA3 /* libPods.a */; };
 		BFCFFE8AB4EAA11F1CD3A14B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B78882AE940255187867EA3 /* libPods.a */; };
+		E2464B9F1B0405DC004926B5 /* IMConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2464B9D1B0405DC004926B5 /* IMConnectionTests.m */; };
+		E2464BA01B0405DC004926B5 /* IMLoanModelTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E2464B9E1B0405DC004926B5 /* IMLoanModelTestCase.m */; };
 		E2775E6E1B03937400B813B7 /* valid.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E6D1B03937400B813B7 /* valid.json */; };
 		E2775E701B03939700B813B7 /* emptyLoans.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E6F1B03939700B813B7 /* emptyLoans.json */; };
 		E2775E721B0393D700B813B7 /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E711B0393D700B813B7 /* invalid.json */; };
-		E2775E741B03BF6D00B813B7 /* IMLoanModelTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E731B03BF6D00B813B7 /* IMLoanModelTestCase.m */; };
 		E2775E771B03C05E00B813B7 /* IMLoanResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E761B03C05E00B813B7 /* IMLoanResponse.m */; };
 		E2775E7A1B03C06D00B813B7 /* IMLoan.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E791B03C06D00B813B7 /* IMLoan.m */; };
 		E2775E7D1B03C08900B813B7 /* IMPaging.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E7C1B03C08900B813B7 /* IMPaging.m */; };
@@ -32,7 +34,6 @@
 		E2775EAB1B0402C900B813B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2775EA81B0402C900B813B7 /* Main.storyboard */; };
 		E2775EB01B04030900B813B7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EAD1B04030900B813B7 /* FirstViewController.m */; };
 		E2775EB11B04030900B813B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EAF1B04030900B813B7 /* SecondViewController.m */; };
-		E2C822891B0373B9009901DD /* IMConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822881B0373B9009901DD /* IMConnectionTests.m */; };
 		E2C8229A1B03751B009901DD /* IMURLConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822991B03751B009901DD /* IMURLConnector.m */; };
 		ED681BA157E469510820C694 /* libPods-IBMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4E181D2FB6E16121F8DEA /* libPods-IBMTests.a */; };
 		FAE766834AF0A489820ADECA /* libPods-IBM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6F3F17AB7B5FC0D4683C88 /* libPods-IBM.a */; };
@@ -54,10 +55,12 @@
 		5B78882AE940255187867EA3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6204EC7711443396D937AE08 /* Pods-IBMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMTests/Pods-IBMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB6F3F17AB7B5FC0D4683C88 /* libPods-IBM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IBM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2464B9D1B0405DC004926B5 /* IMConnectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMConnectionTests.m; path = Models/IMConnectionTests.m; sourceTree = "<group>"; };
+		E2464B9E1B0405DC004926B5 /* IMLoanModelTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMLoanModelTestCase.m; path = Models/IMLoanModelTestCase.m; sourceTree = "<group>"; };
+		E2464BA11B0405E9004926B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		E2775E6D1B03937400B813B7 /* valid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = valid.json; path = Resources/valid.json; sourceTree = "<group>"; };
 		E2775E6F1B03939700B813B7 /* emptyLoans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emptyLoans.json; path = Resources/emptyLoans.json; sourceTree = "<group>"; };
 		E2775E711B0393D700B813B7 /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invalid.json; path = Resources/invalid.json; sourceTree = "<group>"; };
-		E2775E731B03BF6D00B813B7 /* IMLoanModelTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLoanModelTestCase.m; sourceTree = "<group>"; };
 		E2775E751B03C05E00B813B7 /* IMLoanResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMLoanResponse.h; path = Model/IMLoanResponse.h; sourceTree = "<group>"; };
 		E2775E761B03C05E00B813B7 /* IMLoanResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMLoanResponse.m; path = Model/IMLoanResponse.m; sourceTree = "<group>"; };
 		E2775E781B03C06D00B813B7 /* IMLoan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMLoan.h; path = Model/IMLoan.h; sourceTree = "<group>"; };
@@ -95,8 +98,6 @@
 		E2775EAF1B04030900B813B7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = View/SecondViewController.m; sourceTree = "<group>"; };
 		E2C822661B0373B9009901DD /* IBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C822821B0373B9009901DD /* IBMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2C822871B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C822881B0373B9009901DD /* IMConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMConnectionTests.m; sourceTree = "<group>"; };
 		E2C822981B03751B009901DD /* IMURLConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMURLConnector.h; path = "Data Source/IMURLConnector.h"; sourceTree = "<group>"; };
 		E2C822991B03751B009901DD /* IMURLConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMURLConnector.m; path = "Data Source/IMURLConnector.m"; sourceTree = "<group>"; };
 		E459FCB5547A4E12AA179EA0 /* Pods-IBMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBMTests/Pods-IBMTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED681BA157E469510820C694 /* libPods-IBMTests.a in Frameworks */,
+				4571AF7B2149FCE2006AE2B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +135,15 @@
 				E459FCB5547A4E12AA179EA0 /* Pods-IBMTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2464B9C1B04059F004926B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2464B9D1B0405DC004926B5 /* IMConnectionTests.m */,
+				E2464B9E1B0405DC004926B5 /* IMLoanModelTestCase.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		E2775E6C1B03934100B813B7 /* Resources */ = {
@@ -226,10 +237,9 @@
 		E2C822851B0373B9009901DD /* IBMTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2464B9C1B04059F004926B5 /* Models */,
 				E2775E6C1B03934100B813B7 /* Resources */,
-				E2C822881B0373B9009901DD /* IMConnectionTests.m */,
 				E2C822861B0373B9009901DD /* Supporting Files */,
-				E2775E731B03BF6D00B813B7 /* IMLoanModelTestCase.m */,
 			);
 			path = IBMTests;
 			sourceTree = "<group>";
@@ -237,7 +247,7 @@
 		E2C822861B0373B9009901DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2C822871B0373B9009901DD /* Info.plist */,
+				E2464BA11B0405E9004926B5 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -497,8 +507,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C822891B0373B9009901DD /* IMConnectionTests.m in Sources */,
-				E2775E741B03BF6D00B813B7 /* IMLoanModelTestCase.m in Sources */,
+				E2464B9F1B0405DC004926B5 /* IMConnectionTests.m in Sources */,
+				E2464BA01B0405DC004926B5 /* IMLoanModelTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +659,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IBMTests/Info.plist;
+				INFOPLIST_FILE = "IBMTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM.app/IBM";
@@ -665,7 +675,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IBMTests/Info.plist;
+				INFOPLIST_FILE = "IBMTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM.app/IBM";
