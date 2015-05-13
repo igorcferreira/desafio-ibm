@@ -2,8 +2,10 @@
 //  IMAnimatedTableViewHandler.m
 //  IBM
 //
-//  Created by Igor Ferreira on 5/13/15.
-//  Copyright (c) 2015 Igor Ferreira. All rights reserved.
+//  Created by Yury on 12/25/13.
+//  Gist: https://gist.github.com/8123997.git
+//
+//  Edited by Igor Ferreira on 5/13/15.
 //
 
 #import "IMAnimatedTableViewHandler.h"
