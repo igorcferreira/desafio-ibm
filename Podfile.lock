@@ -20,11 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - OCMock (2.2.4)
+  - OHHTTPStubs (4.0.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - OCMock (~> 2.2.4)
+  - OHHTTPStubs (~> 4.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  OHHTTPStubs: 69b1d48b7dfe838a355fdf48d8592d1042e3d85f
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.37.1
