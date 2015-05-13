@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-gR-XMv">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="14" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="numberCell" textLabel="pJ4-Zv-XCx" style="IBUITableViewCellStyleDefault" id="dFp-0R-is8">
@@ -37,16 +37,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="xsD-nx-1uZ"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pXC-gR-XMv" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="0rY-au-qiO"/>
-                            <constraint firstItem="pXC-gR-XMv" firstAttribute="bottom" secondItem="tsR-hK-woN" secondAttribute="bottomMargin" id="7Kd-g3-Ul3"/>
-                            <constraint firstItem="pXC-gR-XMv" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="Iw5-Uv-11i"/>
+                            <constraint firstItem="pXC-gR-XMv" firstAttribute="bottom" secondItem="tsR-hK-woN" secondAttribute="bottomMargin" constant="-50" id="7Kd-g3-Ul3"/>
+                            <constraint firstItem="pXC-gR-XMv" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="14" id="Iw5-Uv-11i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pXC-gR-XMv" secondAttribute="trailing" constant="-16" id="ckh-sj-BeE"/>
                         </constraints>
                     </view>
@@ -72,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XeX-Gw-1gq">
-                                <rect key="frame" x="0.0" y="14" width="600" height="586"/>
+                                <rect key="frame" x="0.0" y="14" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="loanName" textLabel="nXX-Gq-Vui" style="IBUITableViewCellStyleDefault" id="xpb-hy-gml">
@@ -106,7 +103,7 @@
                             <constraint firstItem="XeX-Gw-1gq" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" constant="14" id="WbH-34-tVG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XeX-Gw-1gq" secondAttribute="trailing" constant="-16" id="X30-7X-AgF"/>
                             <constraint firstAttribute="centerY" secondItem="NG8-au-IRu" secondAttribute="centerY" id="l5i-Pu-6R7"/>
-                            <constraint firstItem="XeX-Gw-1gq" firstAttribute="bottom" secondItem="QS5-Rx-YEW" secondAttribute="bottomMargin" id="scO-kc-ESc"/>
+                            <constraint firstItem="XeX-Gw-1gq" firstAttribute="bottom" secondItem="QS5-Rx-YEW" secondAttribute="bottomMargin" constant="-50" id="scO-kc-ESc"/>
                             <constraint firstItem="XeX-Gw-1gq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-16" id="whH-pd-hzC"/>
                         </constraints>
                     </view>

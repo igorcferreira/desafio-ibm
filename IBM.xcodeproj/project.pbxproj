@@ -22,6 +22,8 @@
 		E2775E8B1B03D50200B813B7 /* IMLoanCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E8A1B03D50200B813B7 /* IMLoanCellBinder.m */; };
 		E2775E8E1B03D53100B813B7 /* IMCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E8D1B03D53100B813B7 /* IMCellBinder.m */; };
 		E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E901B03D84900B813B7 /* IMDataSource.m */; };
+		E2775E941B03D92B00B813B7 /* IMNumberCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */; };
+		E2775E971B03D9D500B813B7 /* IMGeneralNumberDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */; };
 		E2C8226C1B0373B9009901DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226B1B0373B9009901DD /* main.m */; };
 		E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226E1B0373B9009901DD /* AppDelegate.m */; };
 		E2C822721B0373B9009901DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822711B0373B9009901DD /* FirstViewController.m */; };
@@ -73,6 +75,10 @@
 		E2775E8D1B03D53100B813B7 /* IMCellBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCellBinder.m; path = Binder/IMCellBinder.m; sourceTree = "<group>"; };
 		E2775E8F1B03D84900B813B7 /* IMDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMDataSource.h; path = "Data Source/IMDataSource.h"; sourceTree = "<group>"; };
 		E2775E901B03D84900B813B7 /* IMDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMDataSource.m; path = "Data Source/IMDataSource.m"; sourceTree = "<group>"; };
+		E2775E921B03D92B00B813B7 /* IMNumberCellBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMNumberCellBinder.h; path = Binder/IMNumberCellBinder.h; sourceTree = "<group>"; };
+		E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMNumberCellBinder.m; path = Binder/IMNumberCellBinder.m; sourceTree = "<group>"; };
+		E2775E951B03D9D500B813B7 /* IMGeneralNumberDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGeneralNumberDataSource.h; path = "Data Source/IMGeneralNumberDataSource.h"; sourceTree = "<group>"; };
+		E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGeneralNumberDataSource.m; path = "Data Source/IMGeneralNumberDataSource.m"; sourceTree = "<group>"; };
 		E2C822661B0373B9009901DD /* IBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C8226A1B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C8226B1B0373B9009901DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 				E2775E8A1B03D50200B813B7 /* IMLoanCellBinder.m */,
 				E2775E8C1B03D53100B813B7 /* IMCellBinder.h */,
 				E2775E8D1B03D53100B813B7 /* IMCellBinder.m */,
+				E2775E921B03D92B00B813B7 /* IMNumberCellBinder.h */,
+				E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */,
 			);
 			name = Binder;
 			sourceTree = "<group>";
@@ -226,6 +234,8 @@
 				E2C822991B03751B009901DD /* IMURLConnector.m */,
 				E2775E8F1B03D84900B813B7 /* IMDataSource.h */,
 				E2775E901B03D84900B813B7 /* IMDataSource.m */,
+				E2775E951B03D9D500B813B7 /* IMGeneralNumberDataSource.h */,
+				E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */,
 			);
 			name = "Data Source";
 			sourceTree = "<group>";
@@ -449,8 +459,10 @@
 				E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */,
 				E2C8229A1B03751B009901DD /* IMURLConnector.m in Sources */,
 				E2C822751B0373B9009901DD /* SecondViewController.m in Sources */,
+				E2775E971B03D9D500B813B7 /* IMGeneralNumberDataSource.m in Sources */,
 				E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */,
 				E2C822721B0373B9009901DD /* FirstViewController.m in Sources */,
+				E2775E941B03D92B00B813B7 /* IMNumberCellBinder.m in Sources */,
 				E2775E871B03D24000B813B7 /* IMTableViewController.m in Sources */,
 				E2775E7A1B03C06D00B813B7 /* IMLoan.m in Sources */,
 				E2C8226C1B0373B9009901DD /* main.m in Sources */,
