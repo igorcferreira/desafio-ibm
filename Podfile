@@ -1,14 +1,12 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '6.0'
+platform :ios, '7.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-link_with 'IBM'
-
-pod 'AFNetworking'
-
-target 'IBMTests' do
-    pod 'OCMock', '~> 2.2.4'
-    pod 'OHHTTPStubs', '~> 4.0.0'
+target 'IBM' do
+    pod 'AFNetworking', '~> 2.5.3'
 end
 
+target 'IBMTests', :exclusive => true do
+    pod 'OHHTTPStubs', '~> 4.0.0'
+end

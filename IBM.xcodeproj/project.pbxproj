@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BFCFFE8AB4EAA11F1CD3A14B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B78882AE940255187867EA3 /* libPods.a */; };
+		E2775E6E1B03937400B813B7 /* valid.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E6D1B03937400B813B7 /* valid.json */; };
+		E2775E701B03939700B813B7 /* emptyLoans.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E6F1B03939700B813B7 /* emptyLoans.json */; };
+		E2775E721B0393D700B813B7 /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E711B0393D700B813B7 /* invalid.json */; };
 		E2C8226C1B0373B9009901DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226B1B0373B9009901DD /* main.m */; };
 		E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226E1B0373B9009901DD /* AppDelegate.m */; };
 		E2C822721B0373B9009901DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822711B0373B9009901DD /* FirstViewController.m */; };
@@ -37,6 +40,9 @@
 		5B78882AE940255187867EA3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6204EC7711443396D937AE08 /* Pods-IBMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBMTests/Pods-IBMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB6F3F17AB7B5FC0D4683C88 /* libPods-IBM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IBM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2775E6D1B03937400B813B7 /* valid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = valid.json; path = Resources/valid.json; sourceTree = "<group>"; };
+		E2775E6F1B03939700B813B7 /* emptyLoans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emptyLoans.json; path = Resources/emptyLoans.json; sourceTree = "<group>"; };
+		E2775E711B0393D700B813B7 /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = invalid.json; path = Resources/invalid.json; sourceTree = "<group>"; };
 		E2C822661B0373B9009901DD /* IBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C8226A1B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C8226B1B0373B9009901DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +94,16 @@
 				E459FCB5547A4E12AA179EA0 /* Pods-IBMTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2775E6C1B03934100B813B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2775E6D1B03937400B813B7 /* valid.json */,
+				E2775E6F1B03939700B813B7 /* emptyLoans.json */,
+				E2775E711B0393D700B813B7 /* invalid.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E2C8225D1B0373B8009901DD = {
@@ -143,6 +159,7 @@
 		E2C822851B0373B9009901DD /* IBMTests */ = {
 			isa = PBXGroup;
 			children = (
+				E2775E6C1B03934100B813B7 /* Resources */,
 				E2C822881B0373B9009901DD /* IBMTests.m */,
 				E2C822861B0373B9009901DD /* Supporting Files */,
 			);
@@ -291,6 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2775E6E1B03937400B813B7 /* valid.json in Resources */,
+				E2775E701B03939700B813B7 /* emptyLoans.json in Resources */,
+				E2775E721B0393D700B813B7 /* invalid.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM/Pods-IBM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3C195981601DC715B8BF5BD2 /* Copy Pods Resources */ = {

@@ -24,7 +24,7 @@ PODS:
   - OHHTTPStubs (4.0.1)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 2.5.3)
   - OCMock (~> 2.2.4)
   - OHHTTPStubs (~> 4.0.0)
 

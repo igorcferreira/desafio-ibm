@@ -9,6 +9,9 @@
 #import "IMURLConnector.h"
 #import <AFNetworking.h>
 
+#define LOAN_PATH       @"v1/loans/search.json"
+#define LOAN_PARAMETER  @{@"status":@"fundraising"}
+
 @interface IMURLConnector()
 
 @property (nonatomic, strong) AFHTTPSessionManager* sessionManager;
@@ -21,13 +24,14 @@
     self = [super init];
     if(self) {
         self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:url];
+        self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
     }
     return self;
 }
 
 -(void)getLoansWithCompletion:(void(^)(NSError *error, NSArray *loans))completion
 {
-    [self.sessionManager GET:@"v1/loans/search.json" parameters:@{@"status":@"fundraising"} success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self.sessionManager GET:LOAN_PATH parameters:LOAN_PARAMETER success:^(NSURLSessionDataTask *task, id responseObject) {
         
         if(responseObject == nil || ![responseObject isKindOfClass:[NSDictionary class]]) {
             [self dispatchInvalidFormat:completion];
