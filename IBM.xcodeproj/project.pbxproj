@@ -25,7 +25,6 @@
 		E2775E941B03D92B00B813B7 /* IMNumberCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */; };
 		E2775E971B03D9D500B813B7 /* IMGeneralNumberDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */; };
 		E2775E9A1B03FEF800B813B7 /* IMAnimatedTableViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E991B03FEF800B813B7 /* IMAnimatedTableViewHandler.m */; };
-		E2775E9E1B0402A100B813B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2775E9D1B0402A100B813B7 /* Info.plist */; };
 		E2775EA21B0402B100B813B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EA01B0402B100B813B7 /* AppDelegate.m */; };
 		E2775EA31B0402B100B813B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EA11B0402B100B813B7 /* main.m */; };
 		E2775EA51B0402C000B813B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2775EA41B0402C000B813B7 /* Images.xcassets */; };
@@ -387,7 +386,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2775E9E1B0402A100B813B7 /* Info.plist in Resources */,
 				E2775EAA1B0402C900B813B7 /* LaunchScreen.xib in Resources */,
 				E2775EA51B0402C000B813B7 /* Images.xcassets in Resources */,
 				E2775EAB1B0402C900B813B7 /* Main.storyboard in Resources */,
