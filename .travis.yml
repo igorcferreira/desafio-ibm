@@ -4,6 +4,5 @@ before_install:
   - brew update
   - brew upgrade xctool
   - gem install cocoapods -v '0.37.1'
-  - pod install
 script:
   - xctool -workspace IBM.xcworkspace -scheme IBM -sdk iphonesimulator clean build test
