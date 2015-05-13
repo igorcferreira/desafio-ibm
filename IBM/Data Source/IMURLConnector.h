@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IMDataSource.h"
 
 @class IMLoanResponse;
 
-@interface IMURLConnector : NSObject
+@interface IMURLConnector : IMDataSource
 
--(instancetype)initWithURL:(NSURL*)url;
+@property (nonatomic, strong) IMLoanResponse *response;
+
 -(void)getLoansWithCompletion:(void(^)(NSError *error, IMLoanResponse *loans))completion;
 
 @end

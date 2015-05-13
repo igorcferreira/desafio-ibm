@@ -32,7 +32,7 @@
 - (void)setUp {
     [super setUp];
     if(self.connector == nil) {
-        self.connector = [[IMURLConnector alloc] initWithURL:[NSURL URLWithString:@"http://api.kivaws.org/"]];
+        self.connector = [[IMURLConnector alloc] init];
     }
     self.responseError = nil;
     self.responseLoans = nil;

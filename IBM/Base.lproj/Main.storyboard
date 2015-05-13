@@ -91,10 +91,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="l7G-ui-cc1"/>
-                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="Y4q-gf-zM8"/>
-                                </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NG8-au-IRu">
                                 <rect key="frame" x="0.0" y="290" width="600" height="20"/>

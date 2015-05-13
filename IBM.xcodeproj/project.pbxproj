@@ -18,6 +18,10 @@
 		E2775E801B03C67B00B813B7 /* IMSerializableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E7F1B03C67B00B813B7 /* IMSerializableModel.m */; };
 		E2775E821B03CCF400B813B7 /* loan.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E811B03CCF400B813B7 /* loan.json */; };
 		E2775E841B03CF5D00B813B7 /* paging.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E831B03CF5D00B813B7 /* paging.json */; };
+		E2775E871B03D24000B813B7 /* IMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E861B03D24000B813B7 /* IMTableViewController.m */; };
+		E2775E8B1B03D50200B813B7 /* IMLoanCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E8A1B03D50200B813B7 /* IMLoanCellBinder.m */; };
+		E2775E8E1B03D53100B813B7 /* IMCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E8D1B03D53100B813B7 /* IMCellBinder.m */; };
+		E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E901B03D84900B813B7 /* IMDataSource.m */; };
 		E2C8226C1B0373B9009901DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226B1B0373B9009901DD /* main.m */; };
 		E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226E1B0373B9009901DD /* AppDelegate.m */; };
 		E2C822721B0373B9009901DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822711B0373B9009901DD /* FirstViewController.m */; };
@@ -61,6 +65,14 @@
 		E2775E7F1B03C67B00B813B7 /* IMSerializableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSerializableModel.m; path = Model/IMSerializableModel.m; sourceTree = "<group>"; };
 		E2775E811B03CCF400B813B7 /* loan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = loan.json; path = Resources/loan.json; sourceTree = "<group>"; };
 		E2775E831B03CF5D00B813B7 /* paging.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = paging.json; path = Resources/paging.json; sourceTree = "<group>"; };
+		E2775E851B03D24000B813B7 /* IMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMTableViewController.h; path = Controller/IMTableViewController.h; sourceTree = "<group>"; };
+		E2775E861B03D24000B813B7 /* IMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMTableViewController.m; path = Controller/IMTableViewController.m; sourceTree = "<group>"; };
+		E2775E891B03D50200B813B7 /* IMLoanCellBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMLoanCellBinder.h; path = Binder/IMLoanCellBinder.h; sourceTree = "<group>"; };
+		E2775E8A1B03D50200B813B7 /* IMLoanCellBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMLoanCellBinder.m; path = Binder/IMLoanCellBinder.m; sourceTree = "<group>"; };
+		E2775E8C1B03D53100B813B7 /* IMCellBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCellBinder.h; path = Binder/IMCellBinder.h; sourceTree = "<group>"; };
+		E2775E8D1B03D53100B813B7 /* IMCellBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCellBinder.m; path = Binder/IMCellBinder.m; sourceTree = "<group>"; };
+		E2775E8F1B03D84900B813B7 /* IMDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMDataSource.h; path = "Data Source/IMDataSource.h"; sourceTree = "<group>"; };
+		E2775E901B03D84900B813B7 /* IMDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMDataSource.m; path = "Data Source/IMDataSource.m"; sourceTree = "<group>"; };
 		E2C822661B0373B9009901DD /* IBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C8226A1B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C8226B1B0373B9009901DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +138,17 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		E2775E881B03D4C400B813B7 /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				E2775E891B03D50200B813B7 /* IMLoanCellBinder.h */,
+				E2775E8A1B03D50200B813B7 /* IMLoanCellBinder.m */,
+				E2775E8C1B03D53100B813B7 /* IMCellBinder.h */,
+				E2775E8D1B03D53100B813B7 /* IMCellBinder.m */,
+			);
+			name = Binder;
+			sourceTree = "<group>";
+		};
 		E2C8225D1B0373B8009901DD = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +172,7 @@
 		E2C822681B0373B9009901DD /* IBM */ = {
 			isa = PBXGroup;
 			children = (
+				E2775E881B03D4C400B813B7 /* Binder */,
 				E2C8229B1B037520009901DD /* Model */,
 				E2C822971B0374DB009901DD /* View */,
 				E2C822931B037479009901DD /* Controller */,
@@ -200,6 +224,8 @@
 			children = (
 				E2C822981B03751B009901DD /* IMURLConnector.h */,
 				E2C822991B03751B009901DD /* IMURLConnector.m */,
+				E2775E8F1B03D84900B813B7 /* IMDataSource.h */,
+				E2775E901B03D84900B813B7 /* IMDataSource.m */,
 			);
 			name = "Data Source";
 			sourceTree = "<group>";
@@ -207,6 +233,8 @@
 		E2C822931B037479009901DD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E2775E851B03D24000B813B7 /* IMTableViewController.h */,
+				E2775E861B03D24000B813B7 /* IMTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -418,12 +446,16 @@
 				E2775E771B03C05E00B813B7 /* IMLoanResponse.m in Sources */,
 				E2775E7D1B03C08900B813B7 /* IMPaging.m in Sources */,
 				E2775E801B03C67B00B813B7 /* IMSerializableModel.m in Sources */,
+				E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */,
 				E2C8229A1B03751B009901DD /* IMURLConnector.m in Sources */,
 				E2C822751B0373B9009901DD /* SecondViewController.m in Sources */,
 				E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */,
 				E2C822721B0373B9009901DD /* FirstViewController.m in Sources */,
+				E2775E871B03D24000B813B7 /* IMTableViewController.m in Sources */,
 				E2775E7A1B03C06D00B813B7 /* IMLoan.m in Sources */,
 				E2C8226C1B0373B9009901DD /* main.m in Sources */,
+				E2775E8B1B03D50200B813B7 /* IMLoanCellBinder.m in Sources */,
+				E2775E8E1B03D53100B813B7 /* IMCellBinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@
 #import <AFNetworking.h>
 #import "IMLoanResponse.h"
 
+#define SERVER_URL [NSURL URLWithString:@"http://api.kivaws.org"]
+
 #define LOAN_PATH       @"v1/loans/search.json"
 #define LOAN_PARAMETER  @{@"status":@"fundraising"}
 
@@ -21,10 +23,10 @@
 
 @implementation IMURLConnector
 
--(instancetype)initWithURL:(NSURL*)url {
+-(instancetype)init {
     self = [super init];
     if(self) {
-        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:url];
+        self.sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:SERVER_URL];
         self.sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
     }
     return self;
@@ -40,21 +42,47 @@
         }
 
         if(completion) {
-            IMLoanResponse *response = [[IMLoanResponse alloc] initWithDictionary:responseObject];
-            completion(nil, response);
+            _response = [[IMLoanResponse alloc] initWithDictionary:responseObject];
+            completion(nil, self.response);
         }
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        _response = nil;
         if(completion) {
             completion(error, nil);
         }
     }];
 }
 
+-(id)objectForIndexPath:(NSIndexPath*)indexPath
+{
+    return self.response.loans[indexPath.row];
+}
+
 -(void)dispatchInvalidFormat:(void(^)(NSError *error, IMLoanResponse *loans))completion
 {
+    _response = nil;
     if(completion) {
         completion([NSError errorWithDomain:@"Invalid Response" code:500 userInfo:nil], nil);
+    }
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if(self.response) {
+        return [self.response.loans count];
+    } else {
+        return 0;
     }
 }
 
