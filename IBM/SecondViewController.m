@@ -8,6 +8,8 @@
 
 #import "SecondViewController.h"
 #import "IMURLConnector.h"
+#import "IMLoanResponse.h"
+#import "IMLoan.h"
 
 #define SERVER_URL [NSURL URLWithString:@"http://api.kivaws.org"]
 
@@ -16,7 +18,7 @@
 @property (nonatomic, strong) IMURLConnector *connector;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) NSArray *loans;
+@property (nonatomic, strong) IMLoanResponse *loans;
 @end
 
 @implementation SecondViewController
@@ -26,8 +28,8 @@
     self.connector = [[IMURLConnector alloc] initWithURL:SERVER_URL];
     [self.tableView setHidden:YES];
     [self.loadingIndicator setHidden:NO];
-    self.loans = @[];
-    [self.connector getLoansWithCompletion:^(NSError *error, NSArray *loans) {
+    self.loans = nil;
+    [self.connector getLoansWithCompletion:^(NSError *error, IMLoanResponse *loans) {
         if(error) {
             [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Error on loading loans" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         } else {
@@ -56,16 +58,19 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    NSDictionary *loan = self.loans[indexPath.row];
-    
-    cell.textLabel.text = loan[@"name"];
+    IMLoan *loan = self.loans.loans[indexPath.row];
+    cell.textLabel.text = [loan name];
     
     return cell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.loans count];
+    if(self.loans) {
+        return [self.loans.loans count];
+    } else {
+        return 0;
+    }
 }
 
 @end

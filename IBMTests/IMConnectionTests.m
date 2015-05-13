@@ -9,20 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "IMURLConnector.h"
+#import "IMLoanResponse.h"
 #import <OHHTTPStubs.h>
 
 #define LOAN_PATH       @"/v1/loans/search.json"
 #define LOAN_PARAMETER  @"status=fundraising"
 
-@interface IBMTests : XCTestCase
+@interface IMConnectionTests : XCTestCase
 
 @property (nonatomic, strong) IMURLConnector *connector;
 @property (nonatomic, strong) NSError *responseError;
-@property (nonatomic, strong) NSArray *responseLoans;
+@property (nonatomic, strong) IMLoanResponse *responseLoans;
 
 @end
 
-@implementation IBMTests
+@implementation IMConnectionTests
 
 #pragma mark -
 #pragma mark Every job behaviour
@@ -60,7 +61,7 @@
 {
     XCTestExpectation *expectation = [self expectationWithDescription:@"Getting Loans"];
     
-    [self.connector getLoansWithCompletion:^(NSError *error, NSArray *loans) {
+    [self.connector getLoansWithCompletion:^(NSError *error, IMLoanResponse *loans) {
         self.responseError = error;
         self.responseLoans = loans;
         [expectation fulfill];
@@ -133,7 +134,8 @@
         XCTAssertNil(error, @"Timeout requisition");
         XCTAssertNil(self.responseError, @"The operation returned with error: %@", self.responseError.debugDescription);
         XCTAssertNotNil(self.responseLoans, @"Invalid loans");
-        XCTAssertTrue(self.responseLoans.count == 20,@"Empty loans");
+        XCTAssertNotNil(self.responseLoans.loans, @"Empty loans");
+        XCTAssertTrue(self.responseLoans.loans.count == 20,@"Empty loans");
     }];
 }
 
@@ -146,7 +148,7 @@
         XCTAssertNil(error, @"Timeout requisition");
         XCTAssertNil(self.responseError, @"Empty loan did dispatch error");
         XCTAssertNotNil(self.responseLoans, @"Empty loan didn't created response array");
-        XCTAssertTrue(self.responseLoans.count == 0, @"Loan is not empty");
+        XCTAssertTrue([self.responseLoans.loans count] == 0, @"Loan is not empty");
     }];
 }
 

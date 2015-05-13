@@ -8,6 +8,7 @@
 
 #import "IMURLConnector.h"
 #import <AFNetworking.h>
+#import "IMLoanResponse.h"
 
 #define LOAN_PATH       @"v1/loans/search.json"
 #define LOAN_PARAMETER  @{@"status":@"fundraising"}
@@ -29,7 +30,7 @@
     return self;
 }
 
--(void)getLoansWithCompletion:(void(^)(NSError *error, NSArray *loans))completion
+-(void)getLoansWithCompletion:(void(^)(NSError *error, IMLoanResponse *loans))completion
 {
     [self.sessionManager GET:LOAN_PATH parameters:LOAN_PARAMETER success:^(NSURLSessionDataTask *task, id responseObject) {
         
@@ -39,8 +40,8 @@
         }
 
         if(completion) {
-            NSArray* loans = responseObject[@"loans"];
-            completion(nil, loans);
+            IMLoanResponse *response = [[IMLoanResponse alloc] initWithDictionary:responseObject];
+            completion(nil, response);
         }
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -50,7 +51,7 @@
     }];
 }
 
--(void)dispatchInvalidFormat:(void(^)(NSError *error, NSArray *loans))completion
+-(void)dispatchInvalidFormat:(void(^)(NSError *error, IMLoanResponse *loans))completion
 {
     if(completion) {
         completion([NSError errorWithDomain:@"Invalid Response" code:500 userInfo:nil], nil);

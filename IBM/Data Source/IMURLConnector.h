@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class IMLoanResponse;
+
 @interface IMURLConnector : NSObject
 
 -(instancetype)initWithURL:(NSURL*)url;
--(void)getLoansWithCompletion:(void(^)(NSError *error, NSArray *loans))completion;
+-(void)getLoansWithCompletion:(void(^)(NSError *error, IMLoanResponse *loans))completion;
 
 @end
