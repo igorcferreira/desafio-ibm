@@ -9,10 +9,10 @@
 #import "IMTableViewController.h"
 #import "IMCellBinder.h"
 #import "IMDataSource.h"
+#import <UIKit/UIKit.h>
 
-@interface IMTableViewController()<UITableViewDataSource>
+@interface IMTableViewController() <UITableViewDataSource>
 
-@property (weak, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) IMDataSource *dataSource;
 @property (nonatomic, strong) Class cellBinder;
 
@@ -24,8 +24,7 @@
 {
     self = [super init];
     if(self) {
-        self.tableView = tableView;
-        self.tableView.dataSource = self;
+        tableView.dataSource = self;
         self.dataSource = dataSource;
         self.cellBinder = binder;
     }

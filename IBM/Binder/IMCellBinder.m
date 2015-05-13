@@ -10,6 +10,11 @@
 
 @implementation IMCellBinder
 
++(UITableViewCell *)tableView:(UITableView *)tableView cellWithObject:(id)object
+{
+    return nil;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     @throw [NSException exceptionWithName:@"Invalid Binder" reason:@"The binder need to be implemented" userInfo:nil];

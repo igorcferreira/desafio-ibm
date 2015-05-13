@@ -24,6 +24,7 @@
 		E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E901B03D84900B813B7 /* IMDataSource.m */; };
 		E2775E941B03D92B00B813B7 /* IMNumberCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */; };
 		E2775E971B03D9D500B813B7 /* IMGeneralNumberDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */; };
+		E2775E9A1B03FEF800B813B7 /* IMAnimatedTableViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E991B03FEF800B813B7 /* IMAnimatedTableViewHandler.m */; };
 		E2C8226C1B0373B9009901DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226B1B0373B9009901DD /* main.m */; };
 		E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226E1B0373B9009901DD /* AppDelegate.m */; };
 		E2C822721B0373B9009901DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822711B0373B9009901DD /* FirstViewController.m */; };
@@ -79,6 +80,8 @@
 		E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMNumberCellBinder.m; path = Binder/IMNumberCellBinder.m; sourceTree = "<group>"; };
 		E2775E951B03D9D500B813B7 /* IMGeneralNumberDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGeneralNumberDataSource.h; path = "Data Source/IMGeneralNumberDataSource.h"; sourceTree = "<group>"; };
 		E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGeneralNumberDataSource.m; path = "Data Source/IMGeneralNumberDataSource.m"; sourceTree = "<group>"; };
+		E2775E981B03FEF800B813B7 /* IMAnimatedTableViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMAnimatedTableViewHandler.h; path = Controller/IMAnimatedTableViewHandler.h; sourceTree = "<group>"; };
+		E2775E991B03FEF800B813B7 /* IMAnimatedTableViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAnimatedTableViewHandler.m; path = Controller/IMAnimatedTableViewHandler.m; sourceTree = "<group>"; };
 		E2C822661B0373B9009901DD /* IBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C8226A1B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C8226B1B0373B9009901DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 			children = (
 				E2775E851B03D24000B813B7 /* IMTableViewController.h */,
 				E2775E861B03D24000B813B7 /* IMTableViewController.m */,
+				E2775E981B03FEF800B813B7 /* IMAnimatedTableViewHandler.h */,
+				E2775E991B03FEF800B813B7 /* IMAnimatedTableViewHandler.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2775E771B03C05E00B813B7 /* IMLoanResponse.m in Sources */,
+				E2775E9A1B03FEF800B813B7 /* IMAnimatedTableViewHandler.m in Sources */,
 				E2775E7D1B03C08900B813B7 /* IMPaging.m in Sources */,
 				E2775E801B03C67B00B813B7 /* IMSerializableModel.m in Sources */,
 				E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */,

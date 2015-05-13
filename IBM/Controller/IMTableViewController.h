@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 @class IMCellBinder;
 @class IMDataSource;
+@class UITableView;
 
 @interface IMTableViewController : NSObject
 

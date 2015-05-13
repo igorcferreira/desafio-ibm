@@ -12,9 +12,11 @@
 #import "IMLoan.h"
 #import "IMTableViewController.h"
 #import "IMLoanCellBinder.h"
+#import "IMAnimatedTableViewHandler.h"
 
 @interface SecondViewController ()
 @property (nonatomic, strong) IMTableViewController *tableViewController;
+@property (nonatomic, strong) IMAnimatedTableViewHandler *tableViewDelegate;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
@@ -26,6 +28,7 @@
     IMURLConnector *connector = [[IMURLConnector alloc] init];
     
     self.tableViewController = [[IMTableViewController alloc] initWithTable:self.tableView dataSource:connector andBinder:[IMLoanCellBinder class]];
+    self.tableViewDelegate = [[IMAnimatedTableViewHandler alloc] initWithTableView:self.tableView];
     
     [self.tableView setHidden:YES];
     [self.loadingIndicator setHidden:NO];

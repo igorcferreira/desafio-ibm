@@ -8,6 +8,24 @@
 
 #import "IMDataSource.h"
 
-@implementation IMDataSource
+@implementation IMDataSource 
+-(id)objectForIndexPath:(NSIndexPath*)indexPath
+{
+    return nil;
+}
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 0;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
 @end
