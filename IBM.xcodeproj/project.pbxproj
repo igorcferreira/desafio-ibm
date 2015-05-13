@@ -25,13 +25,14 @@
 		E2775E941B03D92B00B813B7 /* IMNumberCellBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E931B03D92B00B813B7 /* IMNumberCellBinder.m */; };
 		E2775E971B03D9D500B813B7 /* IMGeneralNumberDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */; };
 		E2775E9A1B03FEF800B813B7 /* IMAnimatedTableViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775E991B03FEF800B813B7 /* IMAnimatedTableViewHandler.m */; };
-		E2C8226C1B0373B9009901DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226B1B0373B9009901DD /* main.m */; };
-		E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C8226E1B0373B9009901DD /* AppDelegate.m */; };
-		E2C822721B0373B9009901DD /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822711B0373B9009901DD /* FirstViewController.m */; };
-		E2C822751B0373B9009901DD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822741B0373B9009901DD /* SecondViewController.m */; };
-		E2C822781B0373B9009901DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C822761B0373B9009901DD /* Main.storyboard */; };
-		E2C8227A1B0373B9009901DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C822791B0373B9009901DD /* Images.xcassets */; };
-		E2C8227D1B0373B9009901DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C8227B1B0373B9009901DD /* LaunchScreen.xib */; };
+		E2775E9E1B0402A100B813B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2775E9D1B0402A100B813B7 /* Info.plist */; };
+		E2775EA21B0402B100B813B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EA01B0402B100B813B7 /* AppDelegate.m */; };
+		E2775EA31B0402B100B813B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EA11B0402B100B813B7 /* main.m */; };
+		E2775EA51B0402C000B813B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2775EA41B0402C000B813B7 /* Images.xcassets */; };
+		E2775EAA1B0402C900B813B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2775EA61B0402C900B813B7 /* LaunchScreen.xib */; };
+		E2775EAB1B0402C900B813B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2775EA81B0402C900B813B7 /* Main.storyboard */; };
+		E2775EB01B04030900B813B7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EAD1B04030900B813B7 /* FirstViewController.m */; };
+		E2775EB11B04030900B813B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2775EAF1B04030900B813B7 /* SecondViewController.m */; };
 		E2C822891B0373B9009901DD /* IMConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822881B0373B9009901DD /* IMConnectionTests.m */; };
 		E2C8229A1B03751B009901DD /* IMURLConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C822991B03751B009901DD /* IMURLConnector.m */; };
 		ED681BA157E469510820C694 /* libPods-IBMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4E181D2FB6E16121F8DEA /* libPods-IBMTests.a */; };
@@ -82,18 +83,18 @@
 		E2775E961B03D9D500B813B7 /* IMGeneralNumberDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGeneralNumberDataSource.m; path = "Data Source/IMGeneralNumberDataSource.m"; sourceTree = "<group>"; };
 		E2775E981B03FEF800B813B7 /* IMAnimatedTableViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMAnimatedTableViewHandler.h; path = Controller/IMAnimatedTableViewHandler.h; sourceTree = "<group>"; };
 		E2775E991B03FEF800B813B7 /* IMAnimatedTableViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAnimatedTableViewHandler.m; path = Controller/IMAnimatedTableViewHandler.m; sourceTree = "<group>"; };
+		E2775E9D1B0402A100B813B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		E2775E9F1B0402B100B813B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Initializer/AppDelegate.h; sourceTree = "<group>"; };
+		E2775EA01B0402B100B813B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Initializer/AppDelegate.m; sourceTree = "<group>"; };
+		E2775EA11B0402B100B813B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Initializer/main.m; sourceTree = "<group>"; };
+		E2775EA41B0402C000B813B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		E2775EA71B0402C900B813B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Resources/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E2775EA91B0402C900B813B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Resources/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2775EAC1B04030900B813B7 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = View/FirstViewController.h; sourceTree = "<group>"; };
+		E2775EAD1B04030900B813B7 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = View/FirstViewController.m; sourceTree = "<group>"; };
+		E2775EAE1B04030900B813B7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = View/SecondViewController.h; sourceTree = "<group>"; };
+		E2775EAF1B04030900B813B7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = View/SecondViewController.m; sourceTree = "<group>"; };
 		E2C822661B0373B9009901DD /* IBM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2C8226A1B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C8226B1B0373B9009901DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2C8226D1B0373B9009901DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2C8226E1B0373B9009901DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2C822701B0373B9009901DD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E2C822711B0373B9009901DD /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E2C822731B0373B9009901DD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E2C822741B0373B9009901DD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		E2C822771B0373B9009901DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2C822791B0373B9009901DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E2C8227C1B0373B9009901DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E2C822821B0373B9009901DD /* IBMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C822871B0373B9009901DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C822881B0373B9009901DD /* IMConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMConnectionTests.m; sourceTree = "<group>"; };
@@ -160,6 +161,26 @@
 			name = Binder;
 			sourceTree = "<group>";
 		};
+		E2775E9B1B04028400B813B7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E2775EA61B0402C900B813B7 /* LaunchScreen.xib */,
+				E2775EA81B0402C900B813B7 /* Main.storyboard */,
+				E2775EA41B0402C000B813B7 /* Images.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		E2775E9C1B04028B00B813B7 /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				E2775E9F1B0402B100B813B7 /* AppDelegate.h */,
+				E2775EA01B0402B100B813B7 /* AppDelegate.m */,
+				E2775EA11B0402B100B813B7 /* main.m */,
+			);
+			name = Initializer;
+			sourceTree = "<group>";
+		};
 		E2C8225D1B0373B8009901DD = {
 			isa = PBXGroup;
 			children = (
@@ -183,20 +204,13 @@
 		E2C822681B0373B9009901DD /* IBM */ = {
 			isa = PBXGroup;
 			children = (
+				E2775E9C1B04028B00B813B7 /* Initializer */,
+				E2775E9B1B04028400B813B7 /* Resource */,
 				E2775E881B03D4C400B813B7 /* Binder */,
 				E2C8229B1B037520009901DD /* Model */,
 				E2C822971B0374DB009901DD /* View */,
 				E2C822931B037479009901DD /* Controller */,
 				E2C822921B037471009901DD /* Data Source */,
-				E2C8226D1B0373B9009901DD /* AppDelegate.h */,
-				E2C8226E1B0373B9009901DD /* AppDelegate.m */,
-				E2C822701B0373B9009901DD /* FirstViewController.h */,
-				E2C822711B0373B9009901DD /* FirstViewController.m */,
-				E2C822731B0373B9009901DD /* SecondViewController.h */,
-				E2C822741B0373B9009901DD /* SecondViewController.m */,
-				E2C822761B0373B9009901DD /* Main.storyboard */,
-				E2C822791B0373B9009901DD /* Images.xcassets */,
-				E2C8227B1B0373B9009901DD /* LaunchScreen.xib */,
 				E2C822691B0373B9009901DD /* Supporting Files */,
 			);
 			path = IBM;
@@ -205,8 +219,7 @@
 		E2C822691B0373B9009901DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2C8226A1B0373B9009901DD /* Info.plist */,
-				E2C8226B1B0373B9009901DD /* main.m */,
+				E2775E9D1B0402A100B813B7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,6 +270,10 @@
 		E2C822971B0374DB009901DD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E2775EAC1B04030900B813B7 /* FirstViewController.h */,
+				E2775EAD1B04030900B813B7 /* FirstViewController.m */,
+				E2775EAE1B04030900B813B7 /* SecondViewController.h */,
+				E2775EAF1B04030900B813B7 /* SecondViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -370,9 +387,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C822781B0373B9009901DD /* Main.storyboard in Resources */,
-				E2C8227D1B0373B9009901DD /* LaunchScreen.xib in Resources */,
-				E2C8227A1B0373B9009901DD /* Images.xcassets in Resources */,
+				E2775E9E1B0402A100B813B7 /* Info.plist in Resources */,
+				E2775EAA1B0402C900B813B7 /* LaunchScreen.xib in Resources */,
+				E2775EA51B0402C000B813B7 /* Images.xcassets in Resources */,
+				E2775EAB1B0402C900B813B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,15 +482,15 @@
 				E2775E801B03C67B00B813B7 /* IMSerializableModel.m in Sources */,
 				E2775E911B03D84900B813B7 /* IMDataSource.m in Sources */,
 				E2C8229A1B03751B009901DD /* IMURLConnector.m in Sources */,
-				E2C822751B0373B9009901DD /* SecondViewController.m in Sources */,
 				E2775E971B03D9D500B813B7 /* IMGeneralNumberDataSource.m in Sources */,
-				E2C8226F1B0373B9009901DD /* AppDelegate.m in Sources */,
-				E2C822721B0373B9009901DD /* FirstViewController.m in Sources */,
+				E2775EB01B04030900B813B7 /* FirstViewController.m in Sources */,
+				E2775EA21B0402B100B813B7 /* AppDelegate.m in Sources */,
 				E2775E941B03D92B00B813B7 /* IMNumberCellBinder.m in Sources */,
 				E2775E871B03D24000B813B7 /* IMTableViewController.m in Sources */,
 				E2775E7A1B03C06D00B813B7 /* IMLoan.m in Sources */,
-				E2C8226C1B0373B9009901DD /* main.m in Sources */,
+				E2775EB11B04030900B813B7 /* SecondViewController.m in Sources */,
 				E2775E8B1B03D50200B813B7 /* IMLoanCellBinder.m in Sources */,
+				E2775EA31B0402B100B813B7 /* main.m in Sources */,
 				E2775E8E1B03D53100B813B7 /* IMCellBinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,20 +515,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E2C822761B0373B9009901DD /* Main.storyboard */ = {
+		E2775EA61B0402C900B813B7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2C822771B0373B9009901DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E2C8227B1B0373B9009901DD /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2C8227C1B0373B9009901DD /* Base */,
+				E2775EA71B0402C900B813B7 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E2775EA81B0402C900B813B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2775EA91B0402C900B813B7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -603,7 +621,7 @@
 			baseConfigurationReference = 103C7DCC2823DC003770C692 /* Pods-IBM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = IBM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IBM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -614,7 +632,7 @@
 			baseConfigurationReference = 00C3F9F61D806E52438A9AE9 /* Pods-IBM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = IBM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IBM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
