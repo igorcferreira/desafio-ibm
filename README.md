@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/igorcferreira/desafio-ibm.svg?branch=master)](https://travis-ci.org/igorcferreira/desafio-ibm)
 
+[![Coverage Status](https://coveralls.io/repos/igorcferreira/desafio-ibm/badge.svg)](https://coveralls.io/r/igorcferreira/desafio-ibm)
+
 # Questões Técnicas - iOS #
 
 Desenvolver uma aplicação com uma Tab Bar sendo o root ViewController mostrando na primeira tab uma table view com números de 1 à 1000;
