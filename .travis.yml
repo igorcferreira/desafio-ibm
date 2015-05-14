@@ -1,5 +1,6 @@
 language: objective-c
 before_install:
+  - gem install coveralls
   - sudo easy_install cpp-coveralls
   - export LANG=en_US.UTF-8
   - brew update
