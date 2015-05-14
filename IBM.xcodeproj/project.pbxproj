@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4571AF7B2149FCE2006AE2B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B78882AE940255187867EA3 /* libPods.a */; };
-		BFCFFE8AB4EAA11F1CD3A14B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B78882AE940255187867EA3 /* libPods.a */; };
 		E2464B9F1B0405DC004926B5 /* IMConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2464B9D1B0405DC004926B5 /* IMConnectionTests.m */; };
 		E2464BA01B0405DC004926B5 /* IMLoanModelTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E2464B9E1B0405DC004926B5 /* IMLoanModelTestCase.m */; };
 		E2775E6E1B03937400B813B7 /* valid.json in Resources */ = {isa = PBXBuildFile; fileRef = E2775E6D1B03937400B813B7 /* valid.json */; };
@@ -110,7 +108,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE766834AF0A489820ADECA /* libPods-IBM.a in Frameworks */,
-				BFCFFE8AB4EAA11F1CD3A14B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +116,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED681BA157E469510820C694 /* libPods-IBMTests.a in Frameworks */,
-				4571AF7B2149FCE2006AE2B0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

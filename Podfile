@@ -1,7 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '7.0'
-
-source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, :deployment_target => '8.3'
 
 target 'IBM' do
     pod 'AFNetworking', '~> 2.5.3'
